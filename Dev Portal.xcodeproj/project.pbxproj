@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC927184220D043C007DCD28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC927183220D043C007DCD28 /* AppDelegate.swift */; };
+		EC927186220D043C007DCD28 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC927185220D043C007DCD28 /* FirstViewController.swift */; };
+		EC927188220D043C007DCD28 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC927187220D043C007DCD28 /* SecondViewController.swift */; };
+		EC92718B220D043C007DCD28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC927189220D043C007DCD28 /* Main.storyboard */; };
+		EC92718D220D043E007DCD28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC92718C220D043E007DCD28 /* Assets.xcassets */; };
+		EC927190220D043E007DCD28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC92718E220D043E007DCD28 /* LaunchScreen.storyboard */; };
+		EC92719B220D043E007DCD28 /* Dev_PortalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92719A220D043E007DCD28 /* Dev_PortalTests.swift */; };
+		EC9271A6220D043E007DCD28 /* Dev_PortalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9271A5220D043E007DCD28 /* Dev_PortalUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC927197220D043E007DCD28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC927178220D043C007DCD28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC92717F220D043C007DCD28;
+			remoteInfo = "Dev Portal";
+		};
+		EC9271A2220D043E007DCD28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC927178220D043C007DCD28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC92717F220D043C007DCD28;
+			remoteInfo = "Dev Portal";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC927180220D043C007DCD28 /* Dev Portal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dev Portal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC927183220D043C007DCD28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC927185220D043C007DCD28 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		EC927187220D043C007DCD28 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		EC92718A220D043C007DCD28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC92718C220D043E007DCD28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC92718F220D043E007DCD28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC927191220D043E007DCD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC927196220D043E007DCD28 /* Dev PortalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dev PortalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC92719A220D043E007DCD28 /* Dev_PortalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dev_PortalTests.swift; sourceTree = "<group>"; };
+		EC92719C220D043E007DCD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC9271A1220D043E007DCD28 /* Dev PortalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dev PortalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9271A5220D043E007DCD28 /* Dev_PortalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dev_PortalUITests.swift; sourceTree = "<group>"; };
+		EC9271A7220D043E007DCD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC92717D220D043C007DCD28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC927193220D043E007DCD28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC92719E220D043E007DCD28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC927177220D043C007DCD28 = {
+			isa = PBXGroup;
+			children = (
+				EC927182220D043C007DCD28 /* Dev Portal */,
+				EC927199220D043E007DCD28 /* Dev PortalTests */,
+				EC9271A4220D043E007DCD28 /* Dev PortalUITests */,
+				EC927181220D043C007DCD28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC927181220D043C007DCD28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC927180220D043C007DCD28 /* Dev Portal.app */,
+				EC927196220D043E007DCD28 /* Dev PortalTests.xctest */,
+				EC9271A1220D043E007DCD28 /* Dev PortalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC927182220D043C007DCD28 /* Dev Portal */ = {
+			isa = PBXGroup;
+			children = (
+				EC927183220D043C007DCD28 /* AppDelegate.swift */,
+				EC927185220D043C007DCD28 /* FirstViewController.swift */,
+				EC927187220D043C007DCD28 /* SecondViewController.swift */,
+				EC927189220D043C007DCD28 /* Main.storyboard */,
+				EC92718C220D043E007DCD28 /* Assets.xcassets */,
+				EC92718E220D043E007DCD28 /* LaunchScreen.storyboard */,
+				EC927191220D043E007DCD28 /* Info.plist */,
+			);
+			path = "Dev Portal";
+			sourceTree = "<group>";
+		};
+		EC927199220D043E007DCD28 /* Dev PortalTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC92719A220D043E007DCD28 /* Dev_PortalTests.swift */,
+				EC92719C220D043E007DCD28 /* Info.plist */,
+			);
+			path = "Dev PortalTests";
+			sourceTree = "<group>";
+		};
+		EC9271A4220D043E007DCD28 /* Dev PortalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC9271A5220D043E007DCD28 /* Dev_PortalUITests.swift */,
+				EC9271A7220D043E007DCD28 /* Info.plist */,
+			);
+			path = "Dev PortalUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC92717F220D043C007DCD28 /* Dev Portal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC9271AA220D043E007DCD28 /* Build configuration list for PBXNativeTarget "Dev Portal" */;
+			buildPhases = (
+				EC92717C220D043C007DCD28 /* Sources */,
+				EC92717D220D043C007DCD28 /* Frameworks */,
+				EC92717E220D043C007DCD28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dev Portal";
+			productName = "Dev Portal";
+			productReference = EC927180220D043C007DCD28 /* Dev Portal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC927195220D043E007DCD28 /* Dev PortalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC9271AD220D043E007DCD28 /* Build configuration list for PBXNativeTarget "Dev PortalTests" */;
+			buildPhases = (
+				EC927192220D043E007DCD28 /* Sources */,
+				EC927193220D043E007DCD28 /* Frameworks */,
+				EC927194220D043E007DCD28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC927198220D043E007DCD28 /* PBXTargetDependency */,
+			);
+			name = "Dev PortalTests";
+			productName = "Dev PortalTests";
+			productReference = EC927196220D043E007DCD28 /* Dev PortalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC9271A0220D043E007DCD28 /* Dev PortalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC9271B0220D043E007DCD28 /* Build configuration list for PBXNativeTarget "Dev PortalUITests" */;
+			buildPhases = (
+				EC92719D220D043E007DCD28 /* Sources */,
+				EC92719E220D043E007DCD28 /* Frameworks */,
+				EC92719F220D043E007DCD28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC9271A3220D043E007DCD28 /* PBXTargetDependency */,
+			);
+			name = "Dev PortalUITests";
+			productName = "Dev PortalUITests";
+			productReference = EC9271A1220D043E007DCD28 /* Dev PortalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC927178220D043C007DCD28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Roger Lee";
+				TargetAttributes = {
+					EC92717F220D043C007DCD28 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EC927195220D043E007DCD28 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EC92717F220D043C007DCD28;
+					};
+					EC9271A0220D043E007DCD28 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EC92717F220D043C007DCD28;
+					};
+				};
+			};
+			buildConfigurationList = EC92717B220D043C007DCD28 /* Build configuration list for PBXProject "Dev Portal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC927177220D043C007DCD28;
+			productRefGroup = EC927181220D043C007DCD28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC92717F220D043C007DCD28 /* Dev Portal */,
+				EC927195220D043E007DCD28 /* Dev PortalTests */,
+				EC9271A0220D043E007DCD28 /* Dev PortalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC92717E220D043C007DCD28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC927190220D043E007DCD28 /* LaunchScreen.storyboard in Resources */,
+				EC92718D220D043E007DCD28 /* Assets.xcassets in Resources */,
+				EC92718B220D043C007DCD28 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC927194220D043E007DCD28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC92719F220D043E007DCD28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC92717C220D043C007DCD28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC927188220D043C007DCD28 /* SecondViewController.swift in Sources */,
+				EC927184220D043C007DCD28 /* AppDelegate.swift in Sources */,
+				EC927186220D043C007DCD28 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC927192220D043E007DCD28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC92719B220D043E007DCD28 /* Dev_PortalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC92719D220D043E007DCD28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC9271A6220D043E007DCD28 /* Dev_PortalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC927198220D043E007DCD28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC92717F220D043C007DCD28 /* Dev Portal */;
+			targetProxy = EC927197220D043E007DCD28 /* PBXContainerItemProxy */;
+		};
+		EC9271A3220D043E007DCD28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC92717F220D043C007DCD28 /* Dev Portal */;
+			targetProxy = EC9271A2220D043E007DCD28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC927189220D043C007DCD28 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC92718A220D043C007DCD28 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC92718E220D043E007DCD28 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC92718F220D043E007DCD28 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC9271A8220D043E007DCD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC9271A9220D043E007DCD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC9271AB220D043E007DCD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dev Portal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsw.info.Dev-Portal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC9271AC220D043E007DCD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dev Portal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsw.info.Dev-Portal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC9271AE220D043E007DCD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dev PortalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsw.info.Dev-PortalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dev Portal.app/Dev Portal";
+			};
+			name = Debug;
+		};
+		EC9271AF220D043E007DCD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dev PortalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsw.info.Dev-PortalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dev Portal.app/Dev Portal";
+			};
+			name = Release;
+		};
+		EC9271B1220D043E007DCD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dev PortalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsw.info.Dev-PortalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dev Portal";
+			};
+			name = Debug;
+		};
+		EC9271B2220D043E007DCD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dev PortalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsw.info.Dev-PortalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dev Portal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC92717B220D043C007DCD28 /* Build configuration list for PBXProject "Dev Portal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC9271A8220D043E007DCD28 /* Debug */,
+				EC9271A9220D043E007DCD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC9271AA220D043E007DCD28 /* Build configuration list for PBXNativeTarget "Dev Portal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC9271AB220D043E007DCD28 /* Debug */,
+				EC9271AC220D043E007DCD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC9271AD220D043E007DCD28 /* Build configuration list for PBXNativeTarget "Dev PortalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC9271AE220D043E007DCD28 /* Debug */,
+				EC9271AF220D043E007DCD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC9271B0220D043E007DCD28 /* Build configuration list for PBXNativeTarget "Dev PortalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC9271B1220D043E007DCD28 /* Debug */,
+				EC9271B2220D043E007DCD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC927178220D043C007DCD28 /* Project object */;
+}
