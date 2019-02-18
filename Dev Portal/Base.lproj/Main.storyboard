@@ -72,19 +72,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjv-Gb-KcD">
-                                <rect key="frame" x="37.5" y="152" width="80" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjv-Gb-KcD">
+                                <rect key="frame" x="15" y="152" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="83M-Bw-lVf"/>
                                     <constraint firstAttribute="height" constant="30" id="TQI-cY-LeB"/>
                                 </constraints>
-                                <state key="normal" title="GetCode"/>
+                                <state key="normal" title="SFSafariVC"/>
                                 <connections>
                                     <action selector="openIDConnect" destination="UOI-Nd-irs" eventType="touchUpInside" id="K96-AU-Fn2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leZ-eL-FvY">
-                                <rect key="frame" x="10" y="192" width="355" height="416"/>
+                                <rect key="frame" x="10" y="232" width="355" height="376"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -113,24 +113,50 @@
                                     <action selector="getInfo" destination="UOI-Nd-irs" eventType="touchUpInside" id="rfX-DF-p7d"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsB-c5-YOQ">
+                                <rect key="frame" x="15" y="187" width="167" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="FQr-Tt-ErY"/>
+                                    <constraint firstAttribute="height" constant="30" id="Wbs-Ta-Yma"/>
+                                </constraints>
+                                <state key="normal" title="SFAuthenticateSession"/>
+                                <connections>
+                                    <action selector="getAuthToken" destination="UOI-Nd-irs" eventType="touchUpInside" id="SHF-1V-5yh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ya-AA-SeX">
+                                <rect key="frame" x="15" y="222" width="203" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QdV-ef-swM"/>
+                                    <constraint firstAttribute="width" constant="203" id="f4l-Gr-ydk"/>
+                                </constraints>
+                                <state key="normal" title="ASWebAuthenticationSession"/>
+                                <connections>
+                                    <action selector="getAuthTokenWithWebLogin" destination="UOI-Nd-irs" eventType="touchUpInside" id="GNE-kr-8F4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="leZ-eL-FvY" firstAttribute="top" secondItem="qjv-Gb-KcD" secondAttribute="bottom" constant="10" id="10X-rY-POt"/>
+                            <constraint firstItem="leZ-eL-FvY" firstAttribute="top" secondItem="qjv-Gb-KcD" secondAttribute="bottom" constant="50" id="10X-rY-POt"/>
                             <constraint firstItem="4ad-b6-AoX" firstAttribute="bottom" secondItem="leZ-eL-FvY" secondAttribute="bottom" constant="10" id="3K8-rz-vvS"/>
+                            <constraint firstItem="1ya-AA-SeX" firstAttribute="leading" secondItem="4ad-b6-AoX" secondAttribute="leading" constant="15" id="5LW-uJ-OUS"/>
                             <constraint firstItem="leZ-eL-FvY" firstAttribute="leading" secondItem="4ad-b6-AoX" secondAttribute="leading" constant="10" id="6NK-WP-z33"/>
                             <constraint firstItem="gke-ps-ArQ" firstAttribute="leading" secondItem="MBS-xS-Mtt" secondAttribute="trailing" constant="14" id="Bd3-Gm-oVc"/>
                             <constraint firstItem="4ad-b6-AoX" firstAttribute="trailing" secondItem="leZ-eL-FvY" secondAttribute="trailing" constant="10" id="EGb-E1-d9Y"/>
+                            <constraint firstItem="xsB-c5-YOQ" firstAttribute="top" secondItem="qjv-Gb-KcD" secondAttribute="bottom" constant="5" id="G88-H7-Exf"/>
                             <constraint firstItem="MBS-xS-Mtt" firstAttribute="centerY" secondItem="qjv-Gb-KcD" secondAttribute="centerY" id="Gg9-Lw-OFA"/>
                             <constraint firstItem="h3y-id-S0U" firstAttribute="centerX" secondItem="xgc-ha-kZk" secondAttribute="centerX" id="MQl-hC-b8f"/>
+                            <constraint firstItem="1ya-AA-SeX" firstAttribute="top" secondItem="xsB-c5-YOQ" secondAttribute="bottom" constant="5" id="QP4-oe-hhc"/>
                             <constraint firstItem="h3y-id-S0U" firstAttribute="top" secondItem="4ad-b6-AoX" secondAttribute="top" constant="10" id="VBu-R7-Cyc"/>
                             <constraint firstItem="gke-ps-ArQ" firstAttribute="centerY" secondItem="MBS-xS-Mtt" secondAttribute="centerY" id="WPp-ri-zhy"/>
                             <constraint firstItem="guM-s4-EjX" firstAttribute="top" secondItem="h3y-id-S0U" secondAttribute="bottom" constant="8" symbolic="YES" id="aC3-ww-h5g"/>
+                            <constraint firstItem="qjv-Gb-KcD" firstAttribute="leading" secondItem="4ad-b6-AoX" secondAttribute="leading" constant="15" id="eJe-30-KGM"/>
                             <constraint firstItem="guM-s4-EjX" firstAttribute="centerX" secondItem="h3y-id-S0U" secondAttribute="centerX" id="gFV-Vs-vNo"/>
                             <constraint firstItem="qjv-Gb-KcD" firstAttribute="top" secondItem="guM-s4-EjX" secondAttribute="bottom" constant="10" id="ieJ-qL-NMw"/>
                             <constraint firstItem="guM-s4-EjX" firstAttribute="top" secondItem="h3y-id-S0U" secondAttribute="bottom" constant="8" id="kUi-dq-7Xf"/>
                             <constraint firstItem="MBS-xS-Mtt" firstAttribute="centerX" secondItem="xgc-ha-kZk" secondAttribute="centerX" id="uga-aX-jeC"/>
-                            <constraint firstItem="MBS-xS-Mtt" firstAttribute="leading" secondItem="qjv-Gb-KcD" secondAttribute="trailing" constant="10" id="wYp-dK-E1d"/>
+                            <constraint firstItem="xsB-c5-YOQ" firstAttribute="leading" secondItem="4ad-b6-AoX" secondAttribute="leading" constant="15" id="zaY-An-XcF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4ad-b6-AoX"/>
                     </view>

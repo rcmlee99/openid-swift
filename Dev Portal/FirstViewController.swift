@@ -9,6 +9,7 @@
 import UIKit
 import SafariServices
 import Alamofire
+import AuthenticationServices
 
 /*! @brief The OIDC issuer from which the configuration will be discovered.
  */
@@ -28,13 +29,19 @@ class FirstViewController: UIViewController {
     var oauthcode:String?
     var oauthstate:String?
     var accessToken:String?
+    var authURL:URL?
     let uuid = UUID().uuidString
     @IBOutlet weak var statusLabel:UILabel?
     @IBOutlet weak var responseLabel:UILabel?
+    var sfauthSession: SFAuthenticationSession?
+    var aswebAuthSession: ASWebAuthenticationSession?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         verifyConfig()
+        
+        let authorizationUrl = kIssuer + "/v1/identity/oauth/authorize?state=" + uuid + "&scope=openid%20profile&client_id=" + kClientID + "&client_secret=" + kClientSecret + "&response_type=code&redirect_uri=" + kRedirectURI
+        authURL = URL(string: authorizationUrl)
     }
     
     func verifyConfig() {
@@ -51,20 +58,26 @@ class FirstViewController: UIViewController {
         let config = SFSafariViewController.Configuration()
         config.entersReaderIfAvailable = true
         
-        let authorizationUrl = kIssuer + "/v1/identity/oauth/authorize?state=" + uuid + "&scope=openid%20profile&client_id=" + kClientID + "&client_secret=" + kClientSecret + "&response_type=code&redirect_uri=" + kRedirectURI
-        
-        let safariVC = SFSafariViewController(url: URL(string: authorizationUrl)!, configuration: config)
+        let safariVC = SFSafariViewController(url: authURL!, configuration: config)
         safariVC.delegate = self as? SFSafariViewControllerDelegate
         safariVC.modalPresentationStyle = .currentContext
         present(safariVC, animated: false, completion: nil)
         
     }
     
-    func setLink(_ urlString: String, code:String, state: String) {
-        responseLabel?.text = urlString
+    func setLink(_ url:URL) {
+        
+        var linkString = URLComponents(string: url.absoluteString)
+        
+        var parameters = [String: String]()
+        for item in (linkString?.queryItems)! {
+            parameters[item.name] = item.value
+        }
+        
+        responseLabel?.text = url.absoluteString
         statusLabel?.text = "Authenticated"
-        oauthcode = code
-        oauthstate = state
+        oauthcode = parameters["code"]!
+        oauthstate = parameters["state"]!
     }
     
     @IBAction func exchangeToken() {
@@ -134,6 +147,44 @@ class FirstViewController: UIViewController {
                 }
         }
         
+    }
+    
+    @IBAction func getAuthToken() {
+
+        self.sfauthSession = SFAuthenticationSession.init(url: authURL!, callbackURLScheme: kRedirectURI,
+        completionHandler: { (callBack:URL?, error:Error?) in
+        
+            // handle auth response
+            guard error == nil, let successURL = callBack else {
+                return
+            }
+        
+            let oauthToken = NSURLComponents(string: (successURL.absoluteString))?.queryItems?.filter({$0.name == "code"}).first
+            print(oauthToken ?? "No OAuth Token")
+            self.setLink(successURL)
+            
+        })
+        self.sfauthSession?.start()
+    
+    }
+    
+    @available(iOS 12.0, *)
+    @IBAction func getAuthTokenWithWebLogin() {
+        
+        self.aswebAuthSession = ASWebAuthenticationSession.init(url: authURL!, callbackURLScheme: kRedirectURI, completionHandler: { (callBack:URL?, error:Error?) in
+            
+            // handle auth response
+            guard error == nil, let successURL = callBack else {
+                return
+            }
+            
+            let oauthToken = NSURLComponents(string: (successURL.absoluteString))?.queryItems?.filter({$0.name == "code"}).first
+            print(oauthToken ?? "No OAuth Token")
+            self.setLink(successURL)
+            
+        })
+
+        self.aswebAuthSession?.start()
     }
 
 
