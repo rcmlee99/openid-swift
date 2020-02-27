@@ -40,7 +40,7 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         verifyConfig()
         
-        let authorizationUrl = kIssuer + "/v1/identity/oauth/authorize?state=" + uuid + "&scope=openid%20profile&client_id=" + kClientID + "&client_secret=" + kClientSecret + "&response_type=code&redirect_uri=" + kRedirectURI
+        let authorizationUrl = kIssuer + "/oauth2/authorize?state=" + uuid + "&scope=openid%20profile&client_id=" + kClientID + "&response_type=code&redirect_uri=" + kRedirectURI
         authURL = URL(string: authorizationUrl)
     }
     
@@ -91,7 +91,7 @@ class FirstViewController: UIViewController {
             "code" : oauthcode!
         ]
         
-        let url = kIssuer + "/v1/identity/oauth/token"
+        let url = kIssuer + "/oauth2/token"
         
         Alamofire.request(url, method: .post, parameters: parameters, encoding: URLEncoding.httpBody).responseJSON
             { response in switch response.result {
@@ -120,7 +120,7 @@ class FirstViewController: UIViewController {
     
     @IBAction func getInfo() {
         
-        let url = kIssuer + "/v1/identity/oauth/userinfo"
+        let url = kIssuer + "/oauth2/userInfo"
         
         let headers = [
             "Authorization": "Bearer " + accessToken!
