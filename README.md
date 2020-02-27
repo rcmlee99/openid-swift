@@ -11,7 +11,8 @@ OpenID Connect (OIDC) is an authentication protocol, based on the OAuth 2.0 fami
 While OAuth 2.0 is about resource access and sharing, OIDC is all about user authentication. Its purpose is to give you one login for multiple sites. Each time you need to log in to a website using OIDC, you are redirected to your OpenID site where you login, and then taken back to the website.
 
 Master Branch : Updated OIDC endpoints for AWS Cognito User Pool 
-Apigee Branch : Endpoints for SNSW Apigee
+
+Other Branch : Endpoints for other systems
 
 ### CREDITS ###
 
